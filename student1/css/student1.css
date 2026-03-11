@@ -1,47 +1,117 @@
-:root {
-    /* --- COLORS FROM TEAM PALETTE 3 --- */
-    --text-color: #2E2E2B;
-    --primary-color: #4F6F5B;
-    --secondary-color: #9FB8A0;
-    --accent-color: #CB8A67;
-    --surface-color: #E6DDCF;
-    --background-color: #F4EFE6;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lato:wght@400;700&display=swap');
 
-    /* --- DIMENSIONS --- */
+:root {
+    /* --- UPDATED COLORS FROM TEAM PALETTE 3 --- */
+    --color-primary: #4F6F5B; /* Forest green */
+    --color-secondary: #9FB8A0; /* Sage */
+    --color-background: #F4EFE6; /* Warm paper */
+    --color-surface: #E6DDCF; /* Linen */
+    --color-accent: #C47A5A; /* Terracotta */
+    --color-text: #2E2E2B; /* Charcoal */
+
+    /* --- KEEPING YOUR DIMENSIONS --- */
     --card-height: 250px;
     --image-height: 180px;
     --page-min-height: 100vh;
+
+    /* --- TEAM FONTS --- */
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Lato', sans-serif;
 }
 
 /* --- GLOBAL & NAVIGATION --- */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: var(--font-body); /* Updated to Team Font */
+    background-color: var(--color-background); /* Updated to Team Background */
+    color: var(--color-text); /* Updated to Team Text */
 }
 
-.navbar {
-    background-color: white !important; /* Change to white for a clean look */
+/* Applying Team Heading Font to titles */
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: var(--font-heading);
+}
+
+/*.navbar {
+    background-color: white !important;
     border-bottom: 1px solid #dee2e6;
 }
 
 .navbar-brand {
-    color: var(--text-color) !important; /* Uses your #2E2E2B dark grey */
+    color: var(--color-text) !important;
     text-decoration: none;
     font-weight: bold;
 }
 
 .nav-links a {
-    color: var(--text-color) !important;
+    color: var(--color-text) !important;
 }
 
-/* --- SIDEBAR (Page 1) --- */
+
+.navbar-nav.gap-4 {
+    gap: 8rem !important;
+}*/
+
+
+/* Update these specific sections in your student1.css */
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0 !important; /* Removes vertical space around the logo and home block */
+}
+
+.nav-item-home {
+    background-color: #F5EBE6; /* The peach color from the common design */
+    height: 70px; /* Adjust this to match your logo height exactly */
+    display: flex;
+    align-items: center;
+    padding: 0 25px; /* Horizontal padding only */
+    margin: 0;
+}
+
+.active-home {
+    color: var(--color-accent) !important; /* Terracotta color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Fixes the gap between logo and home block */
+.navbar-brand {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Find this section in your student1.css and update the gap */
+.navbar-nav.gap-4 {
+    gap: 10rem !important; /* Decreasing this number reduces the space between links */
+}
+
+/* target all navigation links to be black and bold */
+.navbar-nav .nav-link {
+    color: black !important;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+/* Specific styling for the Selection link if it needs to stay highlighted */
+.nav-link.active {
+    color: black !important;
+    font-weight: 800 !important; /* Extra bold for the current page */
+}
+
+/* Adjusting your gap as requested - 10rem is very wide,
+   if it looks too far apart, try 4rem or 5rem */
+.navbar-nav.gap-4 {
+    gap: 10rem !important;
+}
+
 .sidebar {
-    background-color: whitesmoke;
+    background-color: var(--color-surface) !important; /* Updated to Team Surface */
     border-right: 1px solid #dee2e6;
     min-height: var(--page-min-height);
 }
 
+/* --- SIDEBAR (Page 1) --- */
 .sidebar li {
     cursor: pointer;
     transition: 0.3s;
@@ -51,7 +121,7 @@ body {
 }
 
 .sidebar li:hover {
-    color: var(--primary-color);
+    color: var(--color-primary); /* Updated to Team Primary */
     padding-left: 8px;
 }
 
@@ -65,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center; /* FIX: Centers title and text links */
+    text-align: center;
 }
 
 .book-card img {
@@ -74,7 +144,6 @@ body {
     object-fit: cover;
 }
 
-/* FIX: Centers content vertically and horizontally inside the card body */
 .book-card .card-body {
     padding: 10px;
     display: flex;
@@ -83,9 +152,7 @@ body {
     align-items: center;
 }
 
-/* --- PAGE 2 FIXES (THE AMAZON LOOK) --- */
-
-/* Prevents the main product image from becoming too large */
+/* --- PAGE 2 FIXES --- */
 .book-main-img {
     max-width: 300px !important;
     height: auto;
@@ -97,19 +164,16 @@ body {
     background: #fff;
 }
 
-/* UPDATED RECENT CARD: Full Centering Fix */
 .rec-card {
     display: flex !important;
     flex-direction: column !important;
     height: 100%;
     background-color: white;
-    text-align: center !important; /* Centers text horizontally */
-    align-items: center !important; /* Centers the image and content container */
-    justify-content: center !important; /* Centers content vertically */
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-
-/* Prevents the grid images from stretching or squishing */
 .rec-card img {
     height: 220px !important;
     width: 100% !important;
@@ -128,4 +192,33 @@ body {
     border-color: #FCD200 !important;
     border-radius: 20px;
     font-weight: bold;
+}
+
+
+/* Add this to student1.css */
+.book-card .card-title {
+    font-size: 16px !important; /* Adjust this number to make it smaller or larger */
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.book-card .card-text a {
+    font-size: 13px; /* Makes the "History of the past" link smaller too */
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+
+main.bg-light {
+    background-color: floralwhite !important; /* Change this to your desired color */
+}
+
+
+/* --- ADDED FOR THE TEAM PALETTE AND LOGO FIX --- */
+main.bg-light {
+    background-color: var(--color-background) !important;
+}
+
+.navbar-brand img {
+    object-fit: contain;
 }
