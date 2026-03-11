@@ -1,0 +1,122 @@
+:root {
+    --color-primary: #4F6F5B;
+    --color-secondary: #9FB8A0;
+    --color-background: #F4EFE6;
+    --color-surface: #E6DDCF;
+    --color-accent: #C47A5A;
+    --color-text: #2E2E2B;
+
+    --font-heading: "Fraunces", serif;
+    --font-body: "Lato", sans-serif;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+/* Brand / Navbar */
+
+.brand {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.nav-link {
+    color: var(--color-text);
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+.surface-bg {
+    background: var(--color-surface);
+}
+
+/* Hero section */
+
+.hero {
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 48px;
+}
+
+/* Titles */
+
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+/* Events page */
+
+.event-card {
+    border: none;
+    background: var(--color-surface);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+}
+
+.event-date {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Book of the Month page */
+
+.book-author {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.book-card {
+    border: none;
+    background: var(--color-surface);
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-box {
+    background: var(--color-background);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+
+.btn-cozy {
+    background: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+}
+
+.btn-cozy:hover {
+    background: var(--color-accent);
+    color: var(--color-background);
+}
+
+/* Newsletter */
+
+.newsletter {
+    background: var(--color-secondary);
+}
+
+/* Footer */
+
+footer {
+    font-size: 14px;
+}
