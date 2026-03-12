@@ -5,3 +5,105 @@
 @import "../../student2/css/student2.css";
 @import "../../student3/css/student3.css";
 @import "../../student4/css/student4.css";
+
+/* Index - Dasha */
+
+/* Main */
+.location-contact {
+  background-color: var(--color-background);
+}
+
+/* map/contact */
+.location-contact .info-box {
+  background-color: #f8f3eb;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-accent);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 10px 24px rgba(46, 46, 43, 0.08);
+}
+
+/* headings */
+.location-contact h2 {
+  color: var(--color-primary);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.16);
+}
+
+.location-contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0.6rem auto 0;
+  border-radius: 10px;
+}
+
+/* Text styling */
+.location-contact p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.location-contact strong {
+  color: var(--color-primary);
+}
+
+/* Map */
+.map-container {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-border);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+/* styling */
+.location-contact form {
+  text-align: left;
+}
+
+.location-contact .form-label {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.location-contact .form-control {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.location-contact .form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.15rem rgba(196, 122, 90, 0.18);
+}
+
+/* contact button */
+.location-contact .btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.location-contact .btn-primary:hover,
+.location-contact .btn-primary:focus {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
