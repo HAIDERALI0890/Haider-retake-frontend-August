@@ -1,3 +1,4 @@
+ My-pages-is-done
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lato:wght@400;700&display=swap');
 
 :root {
@@ -17,10 +18,26 @@
     /* --- TEAM FONTS --- */
     --font-heading: 'Fraunces', serif;
     --font-body: 'Lato', sans-serif;
+
+:root {
+    /* --- COLORS FROM TEAM PALETTE 3 --- */
+    --text-color: #2E2E2B;
+    --primary-color: #4F6F5B;
+    --secondary-color: #9FB8A0;
+    --accent-color: #CB8A67;
+    --surface-color: #E6DDCF;
+    --background-color: #F4EFE6;
+
+    /* --- DIMENSIONS --- */
+    --card-height: 250px;
+    --image-height: 180px;
+    --page-min-height: 100vh;
+
 }
 
 /* --- GLOBAL & NAVIGATION --- */
 body {
+ 
     font-family: var(--font-body); /* Updated to Team Font */
     background-color: var(--color-background); /* Updated to Team Background */
     color: var(--color-text); /* Updated to Team Text */
@@ -33,16 +50,30 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 /*.navbar {
     background-color: white !important;
+=======
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: white !important; /* Change to white for a clean look */
+
     border-bottom: 1px solid #dee2e6;
 }
 
 .navbar-brand {
+
     color: var(--color-text) !important;
+
+    color: var(--text-color) !important; /* Uses your #2E2E2B dark grey */
+
     text-decoration: none;
     font-weight: bold;
 }
 
 .nav-links a {
+
     color: var(--color-text) !important;
 }
 
@@ -107,11 +138,21 @@ h1, h2, h3, h4, h5, .navbar-brand {
 
 .sidebar {
     background-color: var(--color-surface) !important; /* Updated to Team Surface */
+
+    color: var(--text-color) !important;
+}
+
+/* --- SIDEBAR (Page 1) --- */
+.sidebar {
+    background-color: whitesmoke;
+
     border-right: 1px solid #dee2e6;
     min-height: var(--page-min-height);
 }
 
+
 /* --- SIDEBAR (Page 1) --- */
+
 .sidebar li {
     cursor: pointer;
     transition: 0.3s;
@@ -121,7 +162,11 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 .sidebar li:hover {
+
     color: var(--color-primary); /* Updated to Team Primary */
+
+    color: var(--primary-color);
+
     padding-left: 8px;
 }
 
@@ -135,7 +180,11 @@ h1, h2, h3, h4, h5, .navbar-brand {
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
     text-align: center;
+
+    text-align: center; /* FIX: Centers title and text links */
+
 }
 
 .book-card img {
@@ -143,6 +192,10 @@ h1, h2, h3, h4, h5, .navbar-brand {
     height: var(--image-height);
     object-fit: cover;
 }
+
+
+
+/* FIX: Centers content vertically and horizontally inside the card body */
 
 .book-card .card-body {
     padding: 10px;
@@ -152,7 +205,13 @@ h1, h2, h3, h4, h5, .navbar-brand {
     align-items: center;
 }
 
+
 /* --- PAGE 2 FIXES --- */
+
+/* --- PAGE 2 FIXES (THE AMAZON LOOK) --- */
+
+/* Prevents the main product image from becoming too large */
+
 .book-main-img {
     max-width: 300px !important;
     height: auto;
@@ -164,15 +223,28 @@ h1, h2, h3, h4, h5, .navbar-brand {
     background: #fff;
 }
 
+
+/* UPDATED RECENT CARD: Full Centering Fix */
+
 .rec-card {
     display: flex !important;
     flex-direction: column !important;
     height: 100%;
     background-color: white;
+
     text-align: center !important;
     align-items: center !important;
     justify-content: center !important;
 }
+
+
+    text-align: center !important; /* Centers text horizontally */
+    align-items: center !important; /* Centers the image and content container */
+    justify-content: center !important; /* Centers content vertically */
+}
+
+
+/* Prevents the grid images from stretching or squishing */
 
 .rec-card img {
     height: 220px !important;
@@ -192,6 +264,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     border-color: #FCD200 !important;
     border-radius: 20px;
     font-weight: bold;
+
 }
 
 
@@ -221,4 +294,5 @@ main.bg-light {
 
 .navbar-brand img {
     object-fit: contain;
+
 }

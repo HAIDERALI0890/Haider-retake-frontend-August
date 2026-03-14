@@ -1,31 +1,168 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="common/css/main.css">
-      <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Books &amp; Beyond</title>
+    <meta name="author" content="Daria Kudrina">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common/css/global_vars.css">
+    <link rel="stylesheet" href="common/css/main.css">
 </head>
 <body>
-<div class="container">
-      <h1>Project Full Stack</h1>
-      <div class="row">
-            <p class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur molestias
-                  nam
-                  optio placeat? Aperiam assumenda at enim ex illum ipsam perspiciatis possimus quo rerum sint.
-                  Accusantium
-                  minima placeat provident.</p>
-            <p class="col-md-4">Autem consectetur facere illum ipsum iste maxime nam nemo repudiandae sapiente tempora.
-                  Ad
-                  blanditiis eos fuga ipsa iusto, neque nulla numquam officia, optio quod temporibus tenetur. Asperiores
-                  blanditiis nesciunt obcaecati.</p>
-            <p class="col-md-4">Cum deleniti distinctio error est facilis in inventore, iste laborum minus nisi nulla
-                  omnis
-                  pariatur perferendis possimus provident quasi quo rem repellat rerum sed sequi sit, unde. Animi
-                  assumenda,
-                  blanditiis!</p>
-      </div>
-</div>
-<link rel="stylesheet" href="common/js/bootstrap.bundle.min.js">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid h-100 p-0">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="icon-container">
+                    <img src="student3/img/favicon/BooksandBeyond%20logo.svg" alt="Books &amp; Beyond logo" width="55" height="55" class="d-inline-block align-text-top">
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarBooksBeyond" aria-controls="navbarBooksBeyond"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse h-100" id="navbarBooksBeyond">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 h-100">
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student1/student1page1.html">Selection</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student1/student1page2.html">Recommendations</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student2/student2page1.html">Events</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student2/student2page2.html">Book of the Month</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student3/student3page1.html">Accessories</a>
+                    </li>
+
+                    <li class="nav-item flex-fill text-center h-100">
+                        <a class="nav-link" href="student3/student3page2.html">Blind Box</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Location + Contact Section -->
+    <section class="location-contact py-5">
+        <div class="container">
+            <div class="row g-5 align-items-stretch">
+
+                <!-- Visit Us -->
+                <div class="col-12 col-lg-6">
+                    <div class="info-box h-100">
+                        <h2 class="mb-3">Visit Us</h2>
+                        <p class="mb-4">
+                            Step into Books &amp; Beyond and discover a warm, welcoming space made for readers,
+                            dreamers, and quiet afternoons with a good book.
+                        </p>
+
+                        <p><strong>Address:</strong><br>Kleinhoefstraat 4, 2440 Geel, Belgium</p>
+                        <p><strong>Opening Hours:</strong><br>
+                            Monday – Friday: 9:00 – 18:00<br>
+                            Saturday: 10:00 – 17:00<br>
+                            Sunday: Closed
+                        </p>
+                        <p><strong>Email:</strong><br>international.support@thomasmore.be</p>
+                        <p><strong>Phone:</strong><br>+32 15 36 92 10</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="col-12 col-lg-6">
+                    <div class="info-box h-100">
+                        <h2 class="mb-3">Find Our Store</h2>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps?q=Kleinhoefstraat%204,%202440%20Geel,%20Belgium&output=embed"
+                                width="100%"
+                                height="320"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Map showing the location of Books &amp; Beyond in Geel">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-12">
+                    <div class="info-box">
+                        <h2 class="mb-3">Contact Us</h2>
+                        <p class="mb-4">
+                            Have a question, recommendation, or special request? Send us a message and we’ll get back to you soon.
+                        </p>
+
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="What is your message about?">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p class="mb-2">This is a fictional website created for educational purposes.</p>
+            <p class="mb-2">Created by Haider Ali, Mursal, and Daria Kudrina.</p>
+            <p class="mb-0">
+                &copy; <a href="https://www.thomasmore.be/" target="_blank" rel="noopener noreferrer">Thomas More</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="common/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
