@@ -1,298 +1,198 @@
- My-pages-is-done
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lato:wght@400;700&display=swap');
 
 :root {
-    /* --- UPDATED COLORS FROM TEAM PALETTE 3 --- */
-    --color-primary: #4F6F5B; /* Forest green */
-    --color-secondary: #9FB8A0; /* Sage */
-    --color-background: #F4EFE6; /* Warm paper */
-    --color-surface: #E6DDCF; /* Linen */
-    --color-accent: #C47A5A; /* Terracotta */
-    --color-text: #2E2E2B; /* Charcoal */
-
-    /* --- KEEPING YOUR DIMENSIONS --- */
-    --card-height: 250px;
-    --image-height: 180px;
-    --page-min-height: 100vh;
-
-    /* --- TEAM FONTS --- */
+    --color-primary: #4F6F5B;
+    --color-secondary: #9FB8A0;
+    --color-background: #F4EFE6;
+    --color-surface: #E6DDCF;
+    --color-accent: #C47A5A;
+    --color-text: #2E2E2B;
     --font-heading: 'Fraunces', serif;
     --font-body: 'Lato', sans-serif;
-
-:root {
-    /* --- COLORS FROM TEAM PALETTE 3 --- */
-    --text-color: #2E2E2B;
-    --primary-color: #4F6F5B;
-    --secondary-color: #9FB8A0;
-    --accent-color: #CB8A67;
-    --surface-color: #E6DDCF;
-    --background-color: #F4EFE6;
-
-    /* --- DIMENSIONS --- */
-    --card-height: 250px;
-    --image-height: 180px;
-    --page-min-height: 100vh;
-
 }
 
-/* --- GLOBAL & NAVIGATION --- */
+/* --- GLOBAL STYLES --- */
 body {
- 
-    font-family: var(--font-body); /* Updated to Team Font */
-    background-color: var(--color-background); /* Updated to Team Background */
-    color: var(--color-text); /* Updated to Team Text */
+    font-family: var(--font-body);
+    background-color: white !important;
+    color: var(--color-text);
 }
 
-/* Applying Team Heading Font to titles */
 h1, h2, h3, h4, h5, .navbar-brand {
     font-family: var(--font-heading);
 }
 
-/*.navbar {
-    background-color: white !important;
-=======
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+h4 {
+    margin-top: 190px;
 }
 
-.navbar {
-    background-color: white !important; /* Change to white for a clean look */
-
-    border-bottom: 1px solid #dee2e6;
+nav {
+    border-bottom: 1px solid var(--color-primary);
 }
 
-.navbar-brand {
-
-    color: var(--color-text) !important;
-
-    color: var(--text-color) !important; /* Uses your #2E2E2B dark grey */
-
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a {
-
-    color: var(--color-text) !important;
-}
-
-
-.navbar-nav.gap-4 {
-    gap: 8rem !important;
-}*/
-
-
-/* Update these specific sections in your student1.css */
-
-.navbar {
-    background-color: white !important;
-    border-bottom: 1px solid #dee2e6;
-    padding: 0 !important; /* Removes vertical space around the logo and home block */
-}
-
-.nav-item-home {
-    background-color: #F5EBE6; /* The peach color from the common design */
-    height: 70px; /* Adjust this to match your logo height exactly */
-    display: flex;
-    align-items: center;
-    padding: 0 25px; /* Horizontal padding only */
-    margin: 0;
-}
-
-.active-home {
-    color: var(--color-accent) !important; /* Terracotta color */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Fixes the gap between logo and home block */
-.navbar-brand {
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-}
-
-/* Find this section in your student1.css and update the gap */
-.navbar-nav.gap-4 {
-    gap: 10rem !important; /* Decreasing this number reduces the space between links */
-}
-
-/* target all navigation links to be black and bold */
-.navbar-nav .nav-link {
-    color: black !important;
-    font-weight: bold !important;
-    text-decoration: none;
-}
-
-/* Specific styling for the Selection link if it needs to stay highlighted */
-.nav-link.active {
-    color: black !important;
-    font-weight: 800 !important; /* Extra bold for the current page */
-}
-
-/* Adjusting your gap as requested - 10rem is very wide,
-   if it looks too far apart, try 4rem or 5rem */
-.navbar-nav.gap-4 {
-    gap: 10rem !important;
-}
-
+/* --- PAGE 1: SIDEBAR STYLES --- */
 .sidebar {
-    background-color: var(--color-surface) !important; /* Updated to Team Surface */
-
-    color: var(--text-color) !important;
-}
-
-/* --- SIDEBAR (Page 1) --- */
-.sidebar {
-    background-color: whitesmoke;
-
+    background-color: whitesmoke !important;
+    min-height: 100vh;
     border-right: 1px solid #dee2e6;
-    min-height: var(--page-min-height);
 }
 
-
-/* --- SIDEBAR (Page 1) --- */
-
-.sidebar li {
-    cursor: pointer;
-    transition: 0.3s;
-    list-style: none;
-    font-size: 13px;
-    margin-bottom: 5px;
-}
-
-.sidebar li:hover {
-
-    color: var(--color-primary); /* Updated to Team Primary */
-
-    color: var(--primary-color);
-
-    padding-left: 8px;
-}
-
-/* --- PAGE 1 CARDS --- */
-.book-card {
-    background: #fff;
-    border-radius: 7px;
-    overflow: hidden;
-    height: var(--card-height);
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-    text-align: center;
-
-    text-align: center; /* FIX: Centers title and text links */
-
-}
-
-.book-card img {
-    width: 100%;
-    height: var(--image-height);
-    object-fit: cover;
-}
-
-
-
-/* FIX: Centers content vertically and horizontally inside the card body */
-
-.book-card .card-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* --- PAGE 2 FIXES --- */
-
-/* --- PAGE 2 FIXES (THE AMAZON LOOK) --- */
-
-/* Prevents the main product image from becoming too large */
-
-.book-main-img {
-    max-width: 300px !important;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    padding: 5px;
-    background: #fff;
-}
-
-
-/* UPDATED RECENT CARD: Full Centering Fix */
-
-.rec-card {
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100%;
-    background-color: white;
-
-    text-align: center !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-
-    text-align: center !important; /* Centers text horizontally */
-    align-items: center !important; /* Centers the image and content container */
-    justify-content: center !important; /* Centers content vertically */
-}
-
-
-/* Prevents the grid images from stretching or squishing */
-
-.rec-card img {
-    height: 220px !important;
-    width: 100% !important;
-    object-fit: cover !important;
-    border-radius: 4px;
-}
-
-/* UI Details for Prices and Buttons */
-.text-danger {
-    color: #B12704 !important;
-    font-weight: bold;
-}
-
-.btn-warning {
-    background-color: #FFD814 !important;
-    border-color: #FCD200 !important;
-    border-radius: 20px;
-    font-weight: bold;
-
-}
-
-
-/* Add this to student1.css */
-.book-card .card-title {
-    font-size: 16px !important; /* Adjust this number to make it smaller or larger */
-    margin-bottom: 5px;
-    line-height: 1.2;
-}
-
-.book-card .card-text a {
-    font-size: 13px; /* Makes the "History of the past" link smaller too */
-    text-decoration: none;
+.sidebar h2, .sidebar h4 {
     color: var(--color-primary);
 }
 
+/* THE FIX: Adds space after the horizontal line */
+.sidebar hr {
+    margin-bottom: 25px !important;
+    margin-top: 5px;
+    opacity: 0.2; /* Makes the line a bit softer */
+}
 
-main.bg-light {
-    background-color: floralwhite !important; /* Change this to your desired color */
+.sidebar-list li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.sidebar-list li a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.sidebar-list li:hover {
+    padding-left: 5px;
+    color: var(--color-primary);
+}
+
+/* --- PAGE 1: BOOK SELECTION CARDS (UPDATED WIDTH/HEIGHT) --- */
+.book-card {
+    background: white;
+    padding: 0 !important; /* Removed padding to maximize image space */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 100%;
+
+    /* NEW: Narrower width for a book look */
+    max-width: 190px;
+    margin: 0 auto;
+
+    /* Keep your transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.book-card img {
+    width: 100% !important;
+    /* NEW: Increased height */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+}
+
+.book-card .card-body {
+    padding: 10px;
+}
+
+/* --- PAGE 2: RECOMMENDATION PAGE FIXES --- */
+.book-main-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.rec-card img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.x-small {
+    font-size: 11px;
+}
+
+/* --- FOOTER STYLES --- */
+footer, .main-footer {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    padding: 3rem 0;
+}
+
+footer a, .main-footer a {
+    color: var(--color-secondary) !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+/* --- HOVER EFFECTS --- */
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 
-/* --- ADDED FOR THE TEAM PALETTE AND LOGO FIX --- */
-main.bg-light {
-    background-color: var(--color-background) !important;
+/* --- PAGE 1: TEXT STYLING --- */
+
+/* 1. Make the Book Selection title Green */
+main h1.text-center {
+    color: var(--color-primary) !important;
+    font-family: var(--font-heading);
+    margin-top: 20px;
+    letter-spacing: 1px;
 }
 
-.navbar-brand img {
-    object-fit: contain;
+/* 2. Upgrade the paragraph font to something elegant */
+main p.text-center {
+    /* Replace 'Inter' with whichever one you chose above */
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666; /* A slightly lighter gray for a clean look */
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
 
+
+/* --- SIDEBAR HEADER FIX --- */
+/* Making the sidebar title match the green theme */
+.sidebar h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 20px;
+}
+
+
+/* --- PAGE 1: TEXT STYLING --- */
+
+/* 1. The Green Title */
+main h1.text-center {
+    color: var(--color-primary) !important;
+    font-family: var(--font-heading);
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* 2. Simple Font + Extra Space Below */
+main p.text-center {
+    /* Using a simple, clean font */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+
+    /* THE FIX: This adds a large gap after the paragraph */
+    margin-bottom: 80px !important;
+
+    /* Keeps the text centered and neat */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
