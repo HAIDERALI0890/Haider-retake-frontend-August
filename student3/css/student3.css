@@ -182,12 +182,49 @@ header .lead {
   margin-bottom: 0;
 }
 
+#bookmark-products .card-img-top,
+#sleeve-products .card-img-top,
+#tote-products .card-img-top {
+  height: 455px;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+#bookmark-products,
+#sleeve-products,
+#tote-products {
+  text-align: center;
+}
+
+#bookmark-products h2,
+#sleeve-products h2,
+#tote-products h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.18);
+}
+
+#bookmark-products h2::after,
+#sleeve-products h2::after,
+#tote-products h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0.6rem auto 0;
+  border-radius: 10px;
+}
+
 /* Footer */
 footer {
   text-align: center;
 }
 
 /* Responsive */
+
 @media (max-width: 992px) {
   .carousel-image {
     height: 420px;
@@ -199,6 +236,15 @@ footer {
 
   .carousel-text {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #bookmark-products .card-img-top,
+  #sleeve-products .card-img-top,
+  #tote-products .card-img-top {
+    height: 320px;
+    object-position: center 45%;
   }
 }
 
@@ -230,6 +276,15 @@ footer {
 }
 
 @media (max-width: 576px) {
+  #bookmark-products .card-img-top,
+  #sleeve-products .card-img-top,
+  #tote-products .card-img-top {
+    height: 280px;
+    object-position: center 45%;
+  }
+}
+
+@media (max-width: 576px) {
   .carousel-image {
     height: 300px;
   }
@@ -251,11 +306,9 @@ footer {
 
 /* hero */
 .blind-box-hero {
-  background: linear-gradient(180deg, #e6ddcf 50%, #ddd2c2 100%);
+  background-color: var(--color-background);
   padding: 6rem 0;
   text-align: center;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .blind-box-hero .container {
@@ -276,6 +329,14 @@ footer {
 #blind-box-cards,
 .how-it-works,
 .accordion-section {
+  text-align: center;
+}
+
+#blind-box-cards {
+  background: linear-gradient(180deg, #e6ddcf 0%, #ddd2c2 100%);
+  padding: 5rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   text-align: center;
 }
 
