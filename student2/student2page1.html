@@ -7,44 +7,82 @@
 
     <title>Cozy Bookstore Events</title>
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/student2.css">
 
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-light surface-bg py-3">
-    <div class="container">
+<nav class="navbar navbar-expand-lg p-0">
+    <div class="container-fluid h-100 p-0">
 
-        <a class="navbar-brand brand" href="#">The Cozy Book Nook</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <span class="icon-container">
+        <img alt="BookStore Logo."
+             class="d-inline-block align-text-top"
+             height="55"
+             src="images/Books%20&%20Beyond%20logo" width="55">
+    </span>
+        </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarBooksBeyond"
+                aria-controls="navbarBooksBeyond"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-        </div>
+        <div class="collapse navbar-collapse h-100" id="navbarBooksBeyond">
 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 h-100">
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student1/student1page1.html">Selection</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student1/student1page2.html">Recommendations</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link active" href="student2page1.html">Events</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student2page2.html">Book of the Month</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student3/student3page1.html">Accessories</a>
+                </li>
+
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student3/student3page2.html">Blind Box</a>
+                </li>
+
+            </ul>
+
+        </div>
     </div>
 </nav>
 
-<!-- Hero -->
+
+<!-- HERO -->
 
 <section class="hero text-center">
 
@@ -60,15 +98,14 @@
 
 </section>
 
-<!-- Events -->
+
+<!-- EVENTS -->
 
 <section class="container py-5">
 
     <h2 class="section-title text-center mb-5">Upcoming Events</h2>
 
     <div class="row g-4">
-
-        <!-- Event 1 -->
 
         <div class="col-md-4">
 
@@ -83,18 +120,15 @@
                     <p class="event-date">April 12 • 7PM</p>
 
                     <p class="card-text">
-                        Discuss this month’s novel with fellow readers over tea and pastries in our cozy reading corner.
+                        Discuss this month’s novel with fellow readers over tea and pastries.
                     </p>
 
                     <a href="#" class="btn btn-cozy">Reserve Spot</a>
 
                 </div>
-
             </div>
-
         </div>
 
-        <!-- Event 2 -->
 
         <div class="col-md-4">
 
@@ -109,18 +143,15 @@
                     <p class="event-date">April 18 • 6PM</p>
 
                     <p class="card-text">
-                        Meet bestselling author Emma Clarke and hear the story behind her latest novel.
+                        Meet bestselling author Emma Clarke and hear the story behind her novel.
                     </p>
 
                     <a href="#" class="btn btn-cozy">Join Event</a>
 
                 </div>
-
             </div>
-
         </div>
 
-        <!-- Event 3 -->
 
         <div class="col-md-4">
 
@@ -135,136 +166,29 @@
                     <p class="event-date">April 22 • 7:30PM</p>
 
                     <p class="card-text">
-                        Bring your favorite poems or share your own work in a warm candlelit bookstore atmosphere.
+                        Bring your favorite poems or share your own work.
                     </p>
 
                     <a href="#" class="btn btn-cozy">Attend</a>
 
                 </div>
-
             </div>
-
-        </div>
-
-        <!-- Event 4 -->
-
-        <div class="col-md-4">
-
-            <div class="card event-card h-100">
-
-                <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Fantasy Book Club</h5>
-
-                    <p class="event-date">May 3 • 5PM</p>
-
-                    <p class="card-text">
-                        Dive into magical worlds and discuss epic adventures with other fantasy lovers.
-                    </p>
-
-                    <a href="#" class="btn btn-cozy">Reserve Spot</a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Event 5 -->
-
-        <div class="col-md-4">
-
-            <div class="card event-card h-100">
-
-                <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Writing Workshop</h5>
-
-                    <p class="event-date">May 10 • 6PM</p>
-
-                    <p class="card-text">
-                        Learn storytelling techniques from local writers and improve your creative writing.
-                    </p>
-
-                    <a href="#" class="btn btn-cozy">Register</a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Event 6 -->
-
-        <div class="col-md-4">
-
-            <div class="card event-card h-100">
-
-                <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg" class="card-img-top">
-
-                <div class="card-body">
-
-                    <h5 class="card-title">Kids Storytime</h5>
-
-                    <p class="event-date">May 18 • 4PM</p>
-
-                    <p class="card-text">
-                        A magical afternoon of storytelling and imagination for young readers.
-                    </p>
-
-                    <a href="#" class="btn btn-cozy">Save Seat</a>
-
-                </div>
-
-            </div>
-
         </div>
 
     </div>
 
 </section>
 
-<!-- Newsletter -->
 
-<section class="newsletter text-center py-5">
-
-    <div class="container">
-
-        <h2>Stay Updated</h2>
-
-        <p>Subscribe to hear about new events and book releases.</p>
-
-        <form class="row justify-content-center g-2">
-
-            <div class="col-md-4">
-                <input type="email" class="form-control" placeholder="Your email">
-            </div>
-
-            <div class="col-md-auto">
-                <button class="btn btn-cozy">Subscribe</button>
-            </div>
-
-        </form>
-
-    </div>
-
-</section>
-
-<!-- Footer -->
+<!-- FOOTER -->
 
 <footer class="text-center py-4 surface-bg">
-
     <p>© 2026 The Cozy Book Nook • A place for stories and community</p>
-
 </footer>
 
-<!-- Bootstrap JS -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
