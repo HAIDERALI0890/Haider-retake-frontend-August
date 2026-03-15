@@ -1,0 +1,11 @@
+{
+  "name": "front-end-template",
+  "version": "1.0.0",
+  "description": "1ITF Full Stack Essentials project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "live-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
