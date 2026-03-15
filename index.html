@@ -1,31 +1,303 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="common/css/main.css">
-      <title>Document</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Homepage | Books &amp; Beyond</title>
+    <meta content="Daria Kudrina" name="author">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common/css/global_vars.css" rel="stylesheet">
+    <link href="common/css/main.css" rel="stylesheet">
+    <link href="student1/css/student1.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-      <h1>Project Full Stack</h1>
-      <div class="row">
-            <p class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur molestias
-                  nam
-                  optio placeat? Aperiam assumenda at enim ex illum ipsam perspiciatis possimus quo rerum sint.
-                  Accusantium
-                  minima placeat provident.</p>
-            <p class="col-md-4">Autem consectetur facere illum ipsum iste maxime nam nemo repudiandae sapiente tempora.
-                  Ad
-                  blanditiis eos fuga ipsa iusto, neque nulla numquam officia, optio quod temporibus tenetur. Asperiores
-                  blanditiis nesciunt obcaecati.</p>
-            <p class="col-md-4">Cum deleniti distinctio error est facilis in inventore, iste laborum minus nisi nulla
-                  omnis
-                  pariatur perferendis possimus provident quasi quo rem repellat rerum sed sequi sit, unde. Animi
-                  assumenda,
-                  blanditiis!</p>
-      </div>
-</div>
-<link rel="stylesheet" href="common/js/bootstrap.bundle.min.js">
+
+    <!--
+  Note:
+  This homepage was intended to be a collaborative group page.
+  I made multiple attempts to coordinate the work and sent repeated reminders so that tasks could be completed together.
+  Since some parts were still not done, I ended up completing and putting together the missing sections myself so the page would be ready and complete for submission.
+  - Daria Kudrina
+-->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg p-0">
+    <div class="container-fluid h-100 p-0">
+
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="icon-container">
+                    <img alt="Books &amp; Beyond logo" class="d-inline-block align-text-top" height="55"
+                         src="student3/img/favicon/BooksandBeyond%20logo.svg" width="55">
+                </span>
+        </a>
+
+        <button aria-controls="navbarBooksBeyond" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarBooksBeyond"
+                data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse h-100" id="navbarBooksBeyond">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 h-100">
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student1/student1page1.html">Selection</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student1/student1page2.html">Recommendations</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student2/student2page1.html">Events</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student2/student2page2.html">Book of the Month</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student3/student3page1.html">Accessories</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student3/student3page2.html">Blind Box</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+<section class="homepage-hero py-5">
+    <div class="container text-center">
+        <h1 class="display-3 mb-3">Books &amp; Beyond</h1>
+        <p class="lead mb-3">
+            A cozy, welcoming bookstore made for readers, dreamers, and curious minds.
+        </p>
+        <p class="mb-4">
+            Discover thoughtful recommendations, bookish events, charming accessories, and new reading experiences all in one place.
+        </p>
+        <a href="#explore-pages" class="btn btn-primary">Explore Our Site</a>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="homepage-about py-5">
+    <div class="container">
+        <div class="info-box">
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-lg-7">
+                    <h2 class="mb-3 text-center text-lg-start">Welcome to Books &amp; Beyond</h2>
+                    <p>
+                        Books &amp; Beyond is a charming independent bookstore owned by Sarah, created for book lovers of all ages.
+                        Our store offers a wide range of titles across different genres, making it easy for every reader to find something they love.
+                    </p>
+                    <p>
+                        Beyond our shelves, we also bring readers together through reading clubs, author meet ups, and a warm community centered atmosphere.
+                        We believe in promoting reading culture and creating a cozy space where stories, ideas, and people can connect.
+                    </p>
+                    <p class="mb-0">
+                        Sarah’s goal is to make Books &amp; Beyond the favorite spot in the city for readers looking for inspiration, comfort, and a love of books.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="owner-image-wrap">
+                        <img src="student3/img/sarah.jpg" alt="Sarah, owner of Books and Beyond" class="img-fluid owner-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Explore Our Site -->
+<section id="explore-pages" class="homepage-explore py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">Explore Our Site</h2>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Book Selection</h3>
+                        <p class="card-text">
+                            Browse a variety of titles and discover books chosen for readers with all kinds of interests.
+                        </p>
+                        <a href="student1/student1page1.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Book Recommendation</h3>
+                        <p class="card-text">
+                            Explore curated suggestions and find your next favorite read through personalized inspiration.
+                        </p>
+                        <a href="student1/student1page2.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Cozy Bookstore Events</h3>
+                        <p class="card-text">
+                            See upcoming gatherings, reading clubs, and special events happening at Books &amp; Beyond.
+                        </p>
+                        <a href="student2/student2page1.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Book of the Month</h3>
+                        <p class="card-text">
+                            Take a closer look at our featured monthly pick and see what title is currently in the spotlight.
+                        </p>
+                        <a href="student2/student2page2.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Book Accessories</h3>
+                        <p class="card-text">
+                            Shop charming reading extras like bookmarks, book sleeves, and tote bags for every book lover.
+                        </p>
+                        <a href="student3/student3page1.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title h4">Blind Box</h3>
+                        <p class="card-text">
+                            Try a mystery reading experience and choose a surprise book theme curated for your mood.
+                        </p>
+                        <a href="student3/student3page2.html" class="btn btn-outline-primary">Visit Page</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location + Contact Section -->
+<section class="location-contact py-5">
+    <div class="container">
+        <div class="row g-5 align-items-stretch">
+
+            <!-- Visit Us -->
+            <div class="col-12 col-lg-6">
+                <div class="info-box h-100">
+                    <h2 class="mb-3">Visit Us</h2>
+                    <p class="mb-4">
+                        Step into Books &amp; Beyond and discover a warm, welcoming space made for readers,
+                        dreamers, and quiet afternoons with a good book.
+                    </p>
+
+                    <p><strong>Address:</strong><br>Kleinhoefstraat 4, 2440 Geel, Belgium</p>
+                    <p><strong>Opening Hours:</strong><br>
+                        Monday – Friday: 9:00 – 18:00<br>
+                        Saturday: 10:00 – 17:00<br>
+                        Sunday: Closed
+                    </p>
+                    <p><strong>Email:</strong><br>international.support@thomasmore.be</p>
+                    <p><strong>Phone:</strong><br>+32 15 36 92 10</p>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-12 col-lg-6">
+                <div class="info-box h-100">
+                    <h2 class="mb-3">Find Our Store</h2>
+                    <div class="map-container">
+                        <iframe
+                                allowfullscreen=""
+                                height="320"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?q=Kleinhoefstraat%204,%202440%20Geel,%20Belgium&output=embed"
+                                style="border:0;"
+                                title="Map showing the location of Books &amp; Beyond in Geel"
+                                width="100%">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-12">
+                <div class="info-box">
+                    <h2 class="mb-3">Contact Us</h2>
+                    <p class="mb-4">
+                        Have a question, recommendation, or special request? Send us a message and we’ll get back to you
+                        soon.
+                    </p>
+
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" id="name" placeholder="Enter your name" type="text">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" id="email" placeholder="Enter your email" type="email">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label" for="subject">Subject</label>
+                                <input class="form-control" id="subject" placeholder="What is your message about?"
+                                       type="text">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" placeholder="Write your message here"
+                                          rows="5"></textarea>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5">
+    <div class="container text-center">
+        <p class="mb-2">This is a fictional website created for educational purposes.</p>
+        <p class="mb-2">Created by Daria Kudrina.</p>
+        <p class="mb-0">
+            &copy; <a href="https://www.thomasmore.be/" rel="noopener noreferrer" target="_blank">Thomas More</a>
+        </p>
+    </div>
+</footer>
+
+<script src="common/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
