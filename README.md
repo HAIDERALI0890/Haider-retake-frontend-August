@@ -9,6 +9,6 @@
 | student3 | [Daria Kudrina](mailto:r1025729@student.thomasmore.be) | ACS01 | [d-kudrina](https://github.com/d-kudrina) |
 | student4 | [name 4](mailto:john.doe@example.com) | 1ITF xx | [name](https://github.com/name) |
 
-- **GitHub Repo**: [https://github.com/itfactory-tm/...](https://github.com/itfactory-tm/....)
+- **GitHub Repo**: [https://github.com/itfactory-tm/2025-2026-Fullstack-FE-ACS-105](https://github.com/itfactory-tm/2025-2026-Fullstack-FE-ACS-105)
 - **Netlify Hosting**: [https://booksandbeyond-asc01.netlify.app](https://booksandbeyond-asc01.netlify.app)
 
