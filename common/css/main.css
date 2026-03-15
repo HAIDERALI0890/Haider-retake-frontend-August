@@ -1,7 +1,360 @@
 @import "bootstrap.min.css";
 @import "global_vars.css";
+@import "404.css";
 /* Import student CSS files here */
 @import "../../student1/css/student1.css";
 @import "../../student2/css/student2.css";
 @import "../../student3/css/student3.css";
 @import "../../student4/css/student4.css";
+
+
+/* Index - Dasha */
+
+/* Note:
+  This homepage was intended to be a collaborative group page.
+  I made multiple attempts to coordinate the work and sent repeated reminders so that tasks could be completed together.
+  Since some parts were still not done, I ended up completing and putting together the missing sections myself so the page would be ready and complete for submission.
+  - Daria Kudrina
+*/
+
+/* Main */
+.location-contact {
+  background-color: var(--color-background);
+}
+
+/* map/contact */
+.location-contact .info-box {
+  background-color: #f8f3eb;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-accent);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 10px 24px rgba(46, 46, 43, 0.08);
+}
+
+/* headings */
+.location-contact h2 {
+  color: var(--color-primary);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.16);
+}
+
+.location-contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0.6rem auto 0;
+  border-radius: 10px;
+}
+
+/* Text styling */
+.location-contact p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.location-contact strong {
+  color: var(--color-primary);
+}
+
+/* Map */
+.map-container {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-border);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+/* styling */
+.location-contact form {
+  text-align: left;
+}
+
+.location-contact .form-label {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.location-contact .form-control {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.location-contact .form-control:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.15rem rgba(196, 122, 90, 0.18);
+}
+
+/* contact button */
+.location-contact .btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.location-contact .btn-primary:hover,
+.location-contact .btn-primary:focus {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Homepage - Hero / About / Explore */
+
+/* Hero */
+.homepage-hero {
+  background-color: var(--color-background);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.homepage-hero h1 {
+  color: var(--color-primary);
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.18);
+  margin-bottom: 1rem;
+}
+
+.homepage-hero .lead {
+  color: var(--color-text);
+  max-width: 760px;
+  margin: 0 auto 1rem auto;
+}
+
+.homepage-hero p {
+  color: var(--color-text);
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.7;
+}
+
+.homepage-hero .btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.homepage-hero .btn-primary:hover,
+.homepage-hero .btn-primary:focus {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* About */
+.homepage-about {
+  background-color: var(--color-surface);
+}
+
+.homepage-about .info-box {
+  background-color: #f8f3eb;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-accent);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(46, 46, 43, 0.08);
+}
+
+.homepage-about h2 {
+  color: var(--color-primary);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.16);
+}
+
+.homepage-about h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin-top: 0.6rem;
+  border-radius: 10px;
+  transform: scaleX(0.98);
+  transform-origin: left;
+}
+
+.homepage-about p {
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Explore */
+.homepage-explore {
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.homepage-explore h2 {
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.16);
+}
+
+.homepage-explore h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 0.6rem auto 0;
+  border-radius: 10px;
+}
+
+.homepage-explore .card {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(46, 46, 43, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.homepage-explore .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(46, 46, 43, 0.10);
+}
+
+.homepage-explore .card-body {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.homepage-explore .card-title {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  text-shadow: 2px 3px 6px rgba(46, 46, 43, 0.12);
+}
+
+.homepage-explore .card-text {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-explore .btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.65rem 1.4rem;
+}
+
+.homepage-explore .btn-outline-primary:hover,
+.homepage-explore .btn-outline-primary:focus {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .homepage-hero {
+    padding: 5rem 0;
+  }
+
+  .homepage-about .info-box,
+  .location-contact .info-box {
+    padding: 1.6rem;
+  }
+
+  .homepage-explore .card-body {
+    padding: 1.6rem 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-hero h1 {
+    font-size: 3rem;
+  }
+
+  .homepage-about h2,
+  .homepage-explore h2,
+  .location-contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .homepage-about p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .homepage-hero {
+    padding: 4rem 0;
+  }
+
+  .homepage-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .homepage-about .info-box,
+  .location-contact .info-box {
+    padding: 1.3rem;
+  }
+
+  .homepage-explore .card-body {
+    padding: 1.4rem 1.1rem;
+  }
+}
+
+.owner-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owner-image {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 24px rgba(46, 46, 43, 0.10);
+  object-fit: cover;
+}
+
+.homepage-about h2 {
+  text-align: left;
+}
+
+.homepage-about h2::after {
+  margin-left: 0;
+}
+
+@media (max-width: 992px) {
+  .homepage-about h2 {
+    text-align: center;
+  }
+
+  .homepage-about h2::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .owner-image {
+    max-width: 300px;
+  }
+}

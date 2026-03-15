@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400';
+
+#error404 {
+  font-family: 'Montserrat', sans-serif;
+  color: #dd6915;
+  background-color: #faf0e7;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-size: .7rem;
+    font-weight: 400;
+    transform: translateY(-3rem);
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    display: inline-block;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 8rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      transform: translateY(-4rem);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 10rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      transform: translateY(-5rem);
+    }
+  }
+}
