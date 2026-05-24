@@ -1,55 +1,71 @@
 <!doctype html>
-<!-- Name: Haider ALi
-    Class: ACS01
-    R-number: r0960013
-     -->
-
+<!--
+  Name:     Haider Ali
+  Class:    ACS01
+  R-number: R0960013
+  Page:     Book Recommendation (Page 2)
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Book Recommendation</title>
-    <meta content="your name" name="author"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/student1.css" rel="stylesheet">
-    <link rel="stylesheet" href="../common/css/global_vars.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Book Recommendation | Books &amp; Beyond</title>
+    <meta content="View detailed book information and recommendations at Books &amp; Beyond." name="description">
+    <meta content="Haider Ali" name="author"/>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Lato:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="../student3/img/favicon/BooksandBeyond%20logo.svg" rel="icon" type="image/svg+xml">
+    <link href="../student3/img/favicon/BooksandBeyond%20logo.svg" rel="shortcut icon">
+
+    <!-- Single CSS entry point -->
+    <link href="../common/css/main.css" rel="stylesheet">
 </head>
-<body class="bg-white">
+<body>
 
 <nav class="navbar navbar-expand-lg p-0">
     <div class="container-fluid h-100 p-0">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <span class="icon-container">
-                <img alt="BookStore Logo" class="d-inline-block align-text-top" height="55" src="images/logo.jpg"
-                     width="55">
-            </span>
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <span class="icon-container">
+        <img alt="Books &amp; Beyond logo" class="d-inline-block align-text-top"
+             height="55" src="../student3/img/favicon/BooksandBeyond%20logo.svg"
+             width="55">
+      </span>
         </a>
 
-        <button aria-controls="navbarBooksBeyond" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-bs-target="#navbarBooksBeyond"
-                data-bs-toggle="collapse" type="button">
+        <button aria-controls="navbarBooksBeyond" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarBooksBeyond" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse h-100" id="navbarBooksBeyond">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 h-100">
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link active" href="index.html">Home</a>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link"
-                                                                    href="student1page1.html">Selection</a></li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link" href="student1page2.html">Recommendations</a>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="student1page1.html">Selection</a>
                 </li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link"
-                                                                    href="../student2/student2page1.html">Events</a>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link active" href="student1page2.html">Recommendations</a>
                 </li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link"
-                                                                    href="../student2/student2page2.html">Book of the
-                    Month</a></li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link"
-                                                                    href="../student3/student3page1.html">Accessories</a>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student2/student2page1.html">Events</a>
                 </li>
-                <li class="nav-item flex-fill text-center h-100"><a class="nav-link"
-                                                                    href="../student3/student3page2.html">Blind Box</a>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student2/student2page2.html">Book of the Month</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student3/student3page1.html">Accessories</a>
+                </li>
+                <li class="nav-item flex-fill text-center h-100">
+                    <a class="nav-link" href="../student3/student3page2.html">Blind Box</a>
                 </li>
             </ul>
         </div>
@@ -58,147 +74,166 @@
 
 <div class="container mt-5">
 
-
-    <div class="container">
-        <div class="row mb-5 pb-5 border-bottom align-items-start">
-            <div class="col-md-4 text-center">
-                <img alt="Ancient Empires" class="book-main-img shadow-sm rounded" src="images/historybook1.jpg">
-            </div>
-            <div class="col-md-8">
-                <h1 class="fw-bold h2">Ancient Empires: Foundations of the Modern World</h1>
-                <p class="text-muted">by <span class="text-primary" style="cursor:pointer;">Historical Authors</span>
-                </p>
-                <div class="mb-2">
-                    <span class="text-warning">★★★★☆</span>
-                    <span class="text-primary small ms-2">898 ratings</span>
-                </div>
-                <hr>
-                <p class="fw-bold text-danger h4">$15.99</p>
-                <p class="mt-4"><strong>Description:</strong> One of the most impactful history guides.</p>
-                <div class="mt-4">
-                    <button class="btn btn-warning px-4 fw-bold">Add to Cart</button>
-                    <button class="btn btn-outline-secondary px-4 ms-2">Save for Later</button>
-                </div>
-            </div>
+    <!-- Loading spinner -->
+    <div class="text-center py-5" id="book-detail-loading">
+        <div class="spinner-border" role="status" style="color: var(--color-primary);">
+            <span class="visually-hidden">Loading book…</span>
         </div>
+        <p class="mt-2 text-muted">Loading book details…</p>
+    </div>
 
-        <div class="mb-5">
-            <h3 class="h5 fw-bold mb-4">More items to explore</h3>
-            <div class="row row-cols-2 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card">
-                        <img class="card-img-top rounded" src="images/love1.jpg">
-                        <div class="card-body p-2">
-                            <p class="small fw-bold mb-1 text-truncate">Summer Love</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$18.50</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card">
-                        <img class="card-img-top rounded" src="images/English2.jpg">
-                        <div class="card-body p-2">
-                            <p class="small fw-bold mb-1 text-truncate">Grammar Pro</p>
-                            <p class="text-warning x-small mb-1">★★★★★</p>
-                            <p class="text-danger small fw-bold">$12.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/historybook2.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">World Wars</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$14.50</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/historybook3.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Rise of Nations</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$16.20</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/love2.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Midnight Sun</p>
-                            <p class="text-warning x-small mb-1">★★★★★</p>
-                            <p class="text-danger small fw-bold">$17.00</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/English3.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Classic Fiction</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$11.50</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/book1.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Medieval Life</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$13.99</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/English4.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Poetry Anthology</p>
-                            <p class="text-warning x-small mb-1">★★★★★</p>
-                            <p class="text-danger small fw-bold">$10.00</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/love3.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Lost Heart</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$19.20</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/book3.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Math Basics</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$22.00</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/love4.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Paris Nights</p>
-                            <p class="text-warning x-small mb-1">★★★★★</p>
-                            <p class="text-danger small fw-bold">$16.50</p></div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 text-center rec-card"><img class="card-img-top rounded"
-                                                                               src="images/english1.jpg">
-                        <div class="card-body p-2"><p class="small fw-bold mb-1 text-truncate">Business English</p>
-                            <p class="text-warning x-small mb-1">★★★★☆</p>
-                            <p class="text-danger small fw-bold">$14.00</p></div>
+    <!-- Error message -->
+    <div class="alert alert-danger d-none" id="book-detail-error" role="alert">
+        <strong>Oops!</strong> Could not load book details. Please try again later.
+    </div>
+
+    <!-- JS injects book detail here -->
+    <div class="mb-5" id="book-detail-wrap"></div>
+
+    <!-- More books grid -->
+    <div class="mb-5">
+        <h3 class="h5 fw-bold mb-4">More items to explore</h3>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Summer Love cover" class="card-img-top rounded" src="images/love1.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Summer Love</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$18.50</p>
                     </div>
                 </div>
             </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Grammar Pro cover" class="card-img-top rounded" src="images/English2.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Grammar Pro</p>
+                        <p class="text-warning x-small mb-1">★★★★★</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$12.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="World Wars cover" class="card-img-top rounded" src="images/historybook2.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">World Wars</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$14.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Rise of Nations cover" class="card-img-top rounded" src="images/historybook3.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Rise of Nations</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$16.20</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Midnight Sun cover" class="card-img-top rounded" src="images/love2.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Midnight Sun</p>
+                        <p class="text-warning x-small mb-1">★★★★★</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$17.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Classic Fiction cover" class="card-img-top rounded" src="images/English3.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Classic Fiction</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$11.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Medieval Life cover" class="card-img-top rounded" src="images/book1.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Medieval Life</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$13.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Poetry Anthology cover" class="card-img-top rounded" src="images/English4.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Poetry Anthology</p>
+                        <p class="text-warning x-small mb-1">★★★★★</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$10.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Lost Heart cover" class="card-img-top rounded" src="images/love3.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Lost Heart</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$19.20</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Math Basics cover" class="card-img-top rounded" src="images/book3.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Math Basics</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$22.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Paris Nights cover" class="card-img-top rounded" src="images/love4.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Paris Nights</p>
+                        <p class="text-warning x-small mb-1">★★★★★</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$16.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 text-center rec-card">
+                    <img alt="Business English cover" class="card-img-top rounded" src="images/English1.jpg">
+                    <div class="card-body p-2">
+                        <p class="small fw-bold mb-1 text-truncate">Business English</p>
+                        <p class="text-warning x-small mb-1">★★★★☆</p>
+                        <p class="small fw-bold" style="color: var(--color-accent);">$14.00</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <hr>
-
-    </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
 <!-- Footer -->
-<footer class="mt-5">
+<footer>
     <div class="container text-center">
         <p class="mb-2">This is a fictional website created for educational purposes.</p>
         <p class="mb-2">Created by Haider Ali.</p>
@@ -208,6 +243,10 @@
     </div>
 </footer>
 
+<!-- Bootstrap JS (local copy) -->
+<script src="../common/js/bootstrap.bundle.min.js"></script>
+<!-- Student 1 JavaScript -->
+<script src="js/student1.js"></script>
 
 </body>
 </html>
