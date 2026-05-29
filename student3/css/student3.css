@@ -424,6 +424,28 @@ footer {
   text-align: center;
 }
 
+/*balancing the high of price and button*/
+#blind-box-cards {
+  & .card {
+    height: 90%;
+  }
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .blind-box-price {
+    margin-top: auto;
+    color: var(--color-accent);
+    font-weight: 300;
+  }
+
+  & .blind-box-btn {
+    align-self: center;
+  }
+}
+
 /* Blind Box quiz */
 .blind-box-quiz {
   background-color: var(--color-background);
