@@ -233,6 +233,48 @@ section[aria-labelledby="accessory-tools-title"] {
   }
 }
 
+/* Availability badges */
+.accessory-item {
+  & .card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .availability-badge {
+    position: absolute;
+    top: var(--spacing-sm, 0.75rem);
+    left: var(--spacing-sm, 0.75rem);
+    z-index: 2;
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius-pill, 999px);
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 0 0.25rem 0.7rem rgba(46, 46, 43, 0.16);
+  }
+
+  & .availability-in-stock {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  & .availability-low-stock {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+  }
+
+  & .availability-online {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+  }
+
+  & .availability-check {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+  }
+}
+
 /* Suggestion form section */
 section[aria-labelledby="suggest-accessory-title"] {
   & .card {
@@ -424,6 +466,28 @@ footer {
   text-align: center;
 }
 
+/*balancing the high of price and button*/
+#blind-box-cards {
+  & .card {
+    height: 90%;
+  }
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .blind-box-price {
+    margin-top: auto;
+    color: var(--color-accent);
+    font-weight: 300;
+  }
+
+  & .blind-box-btn {
+    align-self: center;
+  }
+}
+
 /* Blind Box quiz */
 .blind-box-quiz {
   background-color: var(--color-background);
@@ -481,6 +545,18 @@ footer {
       border-radius: var(--radius-lg, 1rem);
     }
   }
+
+  & .quiz-accessory-link {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+}
 
   & #quiz-back-btn,
   & #quiz-next-btn,

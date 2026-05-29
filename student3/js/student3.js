@@ -3,7 +3,7 @@
 // - Book Accessories page
 // - Blind Box page
 
-const API_BASE_URL = "https://backend-4xx-2025.vercel.app";
+const API_BASE_URL = "https://books-and-beyond-2025.vercel.app";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Book Accessories page elements
@@ -348,10 +348,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             showStatus(accessoryStatus, "success", "Live availability loaded successfully.");
         } catch (error) {
+            addAvailabilityBadges([]);
+
             showStatus(
                 accessoryStatus,
                 "warning",
-                "Live availability could not be loaded right now. You can still browse the collection."
+                "Live availability could not be loaded right now. Showing estimated availability instead."
             );
         }
     }
@@ -393,44 +395,66 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Availability badges
-    function addAvailabilityBadges(apiAccessories) {
-        accessoryItems.forEach((item, index) => {
-            const title = item.querySelector(".card-title");
+function addAvailabilityBadges(apiAccessories) {
+    const availabilityByProduct = {
+        "Floral Bookmark Set": "in-stock",
+        "Vintage Reader Bookmark": "available-online",
+        "Minimalist Bookmark Duo": "low-stock",
 
-            if (!title) {
-                return;
-            }
+        "Neutral Cotton Sleeve": "in-stock",
+        "Quilted Travel Sleeve": "low-stock",
+        "Botanical Book Sleeve": "available-online",
 
-            const existingBadge = item.querySelector(".availability-badge");
+        "Classic Reader Tote": "in-stock",
+        "Books & Coffee Tote": "check-store",
+        "Weekend Book Haul Tote": "in-stock"
+    };
 
-            if (existingBadge) {
-                existingBadge.remove();
-            }
+    accessoryItems.forEach((item) => {
+        const card = item.querySelector(".card");
 
-            const badge = document.createElement("span");
-            badge.classList.add("badge", "availability-badge", "mb-2");
+        if (!card) {
+            return;
+        }
 
-            const itemExistsInApi = apiAccessories.some((accessory) => {
-                return normalizeText(accessory.name) === normalizeText(item.dataset.name);
-            });
+        const existingBadge = item.querySelector(".availability-badge");
 
-            if (!itemExistsInApi && apiAccessories.length > 0) {
-                badge.classList.add("text-bg-secondary");
-                badge.textContent = "Check in store";
-            } else if (index % 3 === 0) {
-                badge.classList.add("text-bg-success");
-                badge.textContent = "In stock";
-            } else if (index % 3 === 1) {
-                badge.classList.add("text-bg-warning");
-                badge.textContent = "Low stock";
-            } else {
-                badge.classList.add("text-bg-primary");
-                badge.textContent = "Available online";
-            }
+        if (existingBadge) {
+            existingBadge.remove();
+        }
 
-            title.insertAdjacentElement("afterend", badge);
+        const badge = document.createElement("span");
+        badge.classList.add("availability-badge");
+
+        const itemExistsInApi = apiAccessories.some((accessory) => {
+            return normalizeText(accessory.name) === normalizeText(item.dataset.name);
         });
-    }
+
+        const availabilityStatus = availabilityByProduct[item.dataset.name];
+
+        if (!itemExistsInApi && apiAccessories.length > 0) {
+            badge.classList.add("availability-check");
+            badge.textContent = "Check in store";
+        } else if (availabilityStatus === "in-stock") {
+            badge.classList.add("availability-in-stock");
+            badge.textContent = "In stock";
+        } else if (availabilityStatus === "low-stock") {
+            badge.classList.add("availability-low-stock");
+            badge.textContent = "Low stock";
+        } else if (availabilityStatus === "available-online") {
+            badge.classList.add("availability-online");
+            badge.textContent = "Available online";
+        } else if (availabilityStatus === "check-store") {
+            badge.classList.add("availability-check");
+            badge.textContent = "Check in store";
+        } else {
+            badge.classList.add("availability-check");
+            badge.textContent = "Check in store";
+        }
+
+        card.appendChild(badge);
+    });
+}
 
     // POST request: submit an accessory suggestion
     async function submitAccessorySuggestion(event) {
@@ -594,9 +618,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <div class="card mt-3">
                 <div class="card-body">
-                    <h3 class="h5">Suggested accessory add-on</h3>
+                    <h3 class="h5">Often purchased with</h3>
                     <p class="mb-2">
-                        <strong>${result.accessory}</strong>
+                        <a href="${result.accessoryLink}" class="quiz-accessory-link">
+                            ${result.accessory}
+                        </a>
                     </p>
                     <p class="mb-0">
                         ${result.accessoryDescription}
@@ -629,18 +655,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 bundle: "Cozy Escape Blind Box",
                 description: "This bundle is best for readers who want something gentle, peaceful, and comforting.",
                 accessory: "Quilted Travel Sleeve",
+                accessoryLink: "student3page1.html#sleeve-products",
                 accessoryDescription: "A padded book sleeve that keeps your current read safe when you carry it around."
             },
             dark: {
                 bundle: "Dark & Twisty Blind Box",
                 description: "This bundle is best for readers who enjoy secrets, suspense, and dramatic surprises.",
                 accessory: "Vintage Reader Bookmark",
+                accessoryLink: "student3page1.html#bookmark-products",
                 accessoryDescription: "A classic bookmark that matches the old-book, mysterious atmosphere of this box."
             },
             magical: {
                 bundle: "Magical Worlds Blind Box",
                 description: "This bundle is best for readers who want fantasy settings, adventure, and imagination.",
                 accessory: "Classic Reader Tote",
+                accessoryLink: "student3page1.html#tote-products",
                 accessoryDescription:
                     "A sturdy tote bag for carrying your next magical read, bookstore finds, or library haul."
             },
@@ -649,6 +678,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 description:
                     "This bundle is best for readers who love emotional stories, memorable characters, and warm endings.",
                 accessory: "Floral Bookmark Set",
+                accessoryLink: "student3page1.html#bookmark-products",
                 accessoryDescription:
                     "A soft floral bookmark set that fits the gentle and emotional feeling of this box."
             }
