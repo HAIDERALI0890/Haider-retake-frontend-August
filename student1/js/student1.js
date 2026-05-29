@@ -204,7 +204,7 @@ async function fetchBookDetail() {
 
         // The API returns { "book": { id, title, author, ... } }
         const data = await response.json();
-        const book = data.book;
+        const book = data.book || (Array.isArray(data) ? data.find(b => b.id == bookId) : null);
 
         // Format price
         const priceText = book.price ? `$${parseFloat(book.price).toFixed(2)}` : "Free";
