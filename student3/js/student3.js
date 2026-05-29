@@ -3,7 +3,7 @@
 // - Book Accessories page
 // - Blind Box page
 
-const API_BASE_URL = "https://backend-4xx-2025.vercel.app";
+const API_BASE_URL = "https://books-and-beyond-2025.vercel.app";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Book Accessories page elements
