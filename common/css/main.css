@@ -15,12 +15,16 @@
 @import "../../student3/css/student3.css";
 @import "../../student4/css/student4.css";
 
-
 /* ============================================================
    BASE — Headings & Body
    ============================================================ */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
@@ -29,7 +33,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
 }
-
 
 /* ============================================================
    LINKS
@@ -49,7 +52,6 @@ a {
     outline-offset: 2px;
   }
 }
-
 
 /* ============================================================
    NAVBAR
@@ -119,7 +121,6 @@ a {
   }
 }
 
-
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -161,7 +162,6 @@ footer {
   padding-top: var(--spacing-md);
   font-size: 0.95rem;
 }
-
 
 /* ============================================================
    INDEX — Hero Section
@@ -206,15 +206,18 @@ footer {
   }
 
   @media (max-width: 768px) {
-    & h1 { font-size: 3rem; }
+    & h1 {
+      font-size: 3rem;
+    }
   }
 
   @media (max-width: 576px) {
     padding: 4rem 0;
-    & h1 { font-size: 2.4rem; }
+    & h1 {
+      font-size: 2.4rem;
+    }
   }
 }
-
 
 /* ============================================================
    INDEX — About Section
@@ -262,7 +265,9 @@ footer {
   }
 
   @media (max-width: 992px) {
-    & .info-box { padding: 1.6rem; }
+    & .info-box {
+      padding: 1.6rem;
+    }
 
     & h2 {
       text-align: center;
@@ -273,15 +278,21 @@ footer {
       }
     }
 
-    & p { text-align: left; }
+    & p {
+      text-align: left;
+    }
   }
 
   @media (max-width: 768px) {
-    & h2 { font-size: 1.8rem; }
+    & h2 {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 576px) {
-    & .info-box { padding: 1.3rem; }
+    & .info-box {
+      padding: 1.3rem;
+    }
   }
 }
 
@@ -303,7 +314,6 @@ footer {
     max-width: 300px;
   }
 }
-
 
 /* ============================================================
    INDEX — Explore Our Site Section
@@ -331,6 +341,63 @@ footer {
     }
   }
 
+  /*Custom time message*/
+  & .homepage-reader-message {
+    max-width: 650px;
+    margin-inline: auto;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-primary);
+    font-style: italic;
+  }
+
+  /*Homepage feature secton*/
+  & .homepage-featured-strip {
+    max-width: 1100px;
+    margin-inline: auto;
+    color: var(--color-primary);
+
+    & h3 {
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-weight: 700;
+    }
+
+    & p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-sm, 0.6rem);
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      margin-bottom: 0;
+    }
+
+    & a {
+      color: var(--color-primary);
+      font-weight: 300;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--color-accent);
+        text-decoration: underline;
+      }
+    }
+
+    & span {
+      color: var(--color-accent);
+    }
+  }
+
+  @media (max-width: 992px) {
+    & .homepage-featured-strip {
+      & p {
+        flex-wrap: wrap;
+        white-space: normal;
+      }
+    }
+  }
+
   /* FIX: hover only changes shadow/border — button does NOT move */
   & .card {
     border: 1px solid var(--color-border);
@@ -338,7 +405,9 @@ footer {
     background-color: var(--color-white);
     height: 100%;
     box-shadow: var(--shadow-md);
-    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    transition:
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
 
     &:hover {
       box-shadow: 0 16px 32px rgba(46, 46, 43, 0.14);
@@ -379,18 +448,23 @@ footer {
   }
 
   @media (max-width: 992px) {
-    & .card-body { padding: 1.6rem 1.3rem; }
+    & .card-body {
+      padding: 1.6rem 1.3rem;
+    }
   }
 
   @media (max-width: 768px) {
-    & h2 { font-size: 1.8rem; }
+    & h2 {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 576px) {
-    & .card-body { padding: 1.4rem 1.1rem; }
+    & .card-body {
+      padding: 1.4rem 1.1rem;
+    }
   }
 }
-
 
 /* ============================================================
    INDEX — Location & Contact Section
@@ -476,15 +550,21 @@ footer {
   }
 
   @media (max-width: 992px) {
-    & .info-box { padding: 1.6rem; }
+    & .info-box {
+      padding: 1.6rem;
+    }
   }
 
   @media (max-width: 768px) {
-    & h2 { font-size: 1.8rem; }
+    & h2 {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 576px) {
-    & .info-box { padding: 1.3rem; }
+    & .info-box {
+      padding: 1.3rem;
+    }
   }
 }
 
