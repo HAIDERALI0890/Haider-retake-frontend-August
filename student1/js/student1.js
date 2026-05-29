@@ -12,7 +12,7 @@
 
 // ─── Base URL for the Vercel API ────────────────────────────────────────────
 // All fetch() calls use this constant, so we only need to change it in one place.
-const API_BASE = "https://backend-4xx-2025.vercel.app";
+const API_BASE = "https://books-and-beyond-2025.vercel.app";
 
 
 /* ============================================================
