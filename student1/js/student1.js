@@ -21,6 +21,13 @@ const API_BASE = "https://books-and-beyond-2025.vercel.app";
    them as cards inside #api-books-container on page 1.
    ============================================================ */
 
+/* Show spinner
+Ask the server for books
+Wait for the reply
+Show books on page
+Hide spinner
+If anything goes wrong → show error */
+
 // allBooks holds every book returned by the API.
 // filterAndSortBooks() re-reads this array when the user types or sorts.
 let allBooks = [];
@@ -74,6 +81,7 @@ async function fetchAllBooks() {
    Called by filterAndSortBooks() for every book in the list.
    ============================================================ */
 
+
 function buildBookCard(book) {
     // Use a placeholder emoji when the book has no cover image URL
     const imageHtml = book.image_url
@@ -108,6 +116,12 @@ function buildBookCard(book) {
    the book grid with only the matching / sorted books.
    Called on every keystroke and every sort change.
    ============================================================ */
+
+/* User types "harry" in search box
+Filter removes all non-matching books
+Sort puts the remaining books in order
+Cards are built and shown on the page
+If nothing found → show "no results" message */
 
 function filterAndSortBooks() {
     const container = document.getElementById("api-books-container");
@@ -164,6 +178,12 @@ function filterAndSortBooks() {
    Reads ?id= from the URL, then fetches that single book from
    GET /student1/books?id=<id> and renders it on page 2.
    ============================================================ */
+
+/* Think of it like a library
+
+fetchAllBooks() → "give me ALL the books."
+fetchBookDetail() → "give me ONLY book number 3."
+The ?id=3 in the URL is like a book number on a shelf*/
 
 async function fetchBookDetail() {
     const wrap = document.getElementById("book-detail-wrap");
@@ -290,6 +310,14 @@ async function fetchBookDetail() {
    POST request to /student1/books with the form data.
    Shows success or error feedback to the user.
    ============================================================ */
+
+/* Think of POST like sending a letter
+
+Write the letter → bookData
+Put it in an envelope → JSON.stringify()
+Write "this is JSON" on the envelope → headers
+Send it to the address → fetch(API_BASE)
+Wait for reply    */
 
 async function submitBookSuggestion(event) {
     // Prevent the default browser form submission (page reload)
