@@ -12,8 +12,7 @@
 
 // ─── Base URL for the Vercel API ────────────────────────────────────────────
 // All fetch() calls use this constant, so we only need to change it in one place.
-const API_BASE = "https://books-and-beyond-2025.vercel.app";
-
+const API_BASE = "https://haider-retake-backend-august.vercel.app";
 
 /* ============================================================
    1. GET REQUEST 1 — fetchAllBooks()
@@ -49,7 +48,6 @@ async function fetchAllBooks() {
     try {
         // fetch() sends an HTTP GET request to the Vercel API
         const response = await fetch(`${API_BASE}/student1/books`);
-
         // If the server replied with an error status (4xx / 5xx), throw so catch handles it
         if (!response.ok) {
             throw new Error(`Server error: ${response.status}`);
@@ -216,7 +214,7 @@ async function fetchBookDetail() {
 
     try {
         // Fetch the single book from the API using a query parameter (?id=)
-        const response = await fetch(`${API_BASE}/student1/books?id=${bookId}`);
+        const response = await fetch(`${API_BASE}/student1/books/detail?id=${bookId}`);
 
         if (!response.ok) {
             throw new Error(`Server error: ${response.status}`);
